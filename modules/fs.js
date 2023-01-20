@@ -14,3 +14,22 @@ fs.writeFile(path.join(__dirname, 'teste', 'teste.txt'), 'Ola', (error) => {
      }
      console.log("Arquivo criado")
 })
+
+fs.appendFile(path.join(__dirname, 'teste', 'teste.txt'), 'Ola', (error) => {
+    if (error) {
+        return console.log("Arquivo nao existe")
+     }
+     console.log("Arquivo editado")
+     readFile()
+})
+
+
+function readFile(){
+    fs.readFile(path.join(__dirname, 'teste', 'teste.txt'), (error, data) => {
+        if (error) {
+            return console.log("Arquivo nao existe")
+        }
+        console.log(data.toString())
+        console.log("Arquivo lido")
+    })
+}
