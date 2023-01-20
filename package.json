@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ViniciusTeixeiraBarreto/magic-potion/issues"
   },
-  "homepage": "https://github.com/ViniciusTeixeiraBarreto/magic-potion#readme"
+  "homepage": "https://github.com/ViniciusTeixeiraBarreto/magic-potion#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
